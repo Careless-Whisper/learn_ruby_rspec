@@ -1,4 +1,6 @@
-Test First Ruby -- RSpec 3 Edition
+Pair-programming avec Titouan Dessus (https://github.com/Titouax)
+
+
 ==========
 
 ### Set up instructions
