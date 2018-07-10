@@ -1,17 +1,8 @@
-
-def translate(str)
-  if str =~ /\A[aeiou]/
-    str = "#{str}ay"
-  elsif str =~ /\AB![aeiou]/
-    c = str[0, 1]
-    str[0] = ""
-    str = "#{str}#{c}ay"
+#write your code here
+def translate(word)
+  if word.start_with?('a' || 'e' || 'i' || 'o' || 'u' || 'y')
+    word << 'ay'
   else
-    c = str[0]
-    str[0] = ""
-    str = "#{str}#{c}ay"
+    word.gsub(word[0], '') << word[0] << 'ay'
   end
-  p str
 end
-
-translate("apple")
